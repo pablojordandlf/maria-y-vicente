@@ -129,20 +129,20 @@ const Features = () => (
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7 px-5 py-12">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-2.mp4"
+            src="photos/foto-maria-1.mp4"
             title={
               <>
                 PRE-BODA
               </>
             }
             description="Un agua y a dormir que luego me llegáis con resaca a la boda."
-            isComingSoon
+            
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-3.mp4"
+            src="photos/foto-maria-1.mp4"
             title={
               <>
                 CEREMONIA
@@ -153,9 +153,9 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="photos/foto-maria-1.mp4"
             title={
               <>
                 CELEBRACIÓN
