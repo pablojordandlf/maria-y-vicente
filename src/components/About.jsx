@@ -12,10 +12,10 @@ const About = () => {
       scrollTrigger: {
         trigger: "#clip",
         start: "center center",
-        end: "+=800 center",
+        end: "+=0 center",
         scrub: 0.5,
         pin: true,
-        pinSpacing: true,
+        pinSpacing: false,
       },
     });
 
@@ -46,14 +46,15 @@ const About = () => {
       </div>
 
       <div className="h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image">
+        <div className="about-image">
           <img
             src="photos/foto-maria2.jpg"
             alt="Background"
-            className="absolute left-0 top-0 size-full object-cover"
+            className=" left-0 top-0 size-full "
           />
         </div>
       </div>
+
     </div>
   );
 };
