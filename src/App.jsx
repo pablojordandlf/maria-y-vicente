@@ -9,13 +9,13 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
-      <NavBar />
+      {/*<NavBar />*/}
       <Hero />
-      <About />
-      <Features />
-      <Story />
-      <Contact />
-      <Footer />
+      {/*<About />*/}
+      {/*<Features />*/}
+      {/*<Story />*/}
+      {/*<Contact />*/}
+      {/*<Footer />*/}
     </main>
   );
 }
