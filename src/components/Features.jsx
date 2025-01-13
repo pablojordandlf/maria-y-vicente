@@ -99,8 +99,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-white pb-52">
     <div className="container mx-auto px-3 md:px-10">
+    {/*  
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
           Into the Metagame Layer
@@ -124,17 +125,17 @@ const Features = () => (
           isComingSoon
         />
       </BentoTilt>
-
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+    */} 
+      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7 px-5 py-12">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                PRE-BODA
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Un agua y a dormir que luego me llegáis con resaca a la boda."
             isComingSoon
           />
         </BentoTilt>
@@ -144,11 +145,11 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                CEREMONIA
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
-            isComingSoon
+            description="No se puede estar en misa y repicando"
+            
           />
         </BentoTilt>
 
@@ -157,11 +158,11 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                CELEBRACIÓN
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
-            isComingSoon
+            description="A tope con la cope"
+            
           />
         </BentoTilt>
 
