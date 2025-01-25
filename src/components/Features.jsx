@@ -58,11 +58,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <video
+      <img
         src={src}
-        loop
-        muted
-        autoPlay
+        alt={title}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
@@ -100,91 +98,31 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
 const Features = () => (
   <section className="bg-white pb-52">
-    <div className="container mx-auto px-3 md:px-10">
-    {/*  
-      <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
-        </p>
-      </div>
-
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <BentoCard
-          src="videos/feature-1.mp4"
-          title={
-            <>
-              radia<b>n</b>t
-            </>
-          }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
-          isComingSoon
-        />
-      </BentoTilt>
-    */} 
+    <div className="container mt-0 mx-auto px-3 md:px-10">
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7 px-5 py-12">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
-          <BentoCard
-            src="photos/foto-maria-1.mp4"
-            title={
-              <>
-                PRE-BODA
-              </>
-            }
-            description="Un agua y a dormir que luego me llegáis con resaca a la boda."
-            
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
-          <BentoCard
-            src="photos/foto-maria-1.mp4"
-            title={
-              <>
-                CEREMONIA
-              </>
-            }
-            description="No se puede estar en misa y repicando"
-            
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
-          <BentoCard
-            src="photos/foto-maria-1.mp4"
-            title={
-              <>
-                CELEBRACIÓN
-              </>
-            }
-            description="A tope con la cope"
-            
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 scale-[5] self-end" />
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
-          />
-        </BentoTilt>
+        {[1, 2, 3].map((index) => (
+          <BentoTilt key={index} className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+            <BentoCard
+              src={`/photos/image-feature-${index}.jpeg`}
+              title={
+                <>
+                  {index === 1
+                    ? "PRE-BODA"
+                    : index === 2
+                    ? "CEREMONIA"
+                    : "CELEBRACIÓN"}
+                </>
+              }
+              description={
+                index === 1
+                  ? "Un agua y a dormir que luego me llegáis con resaca a la boda."
+                  : index === 2
+                  ? "No se puede estar en misa y repicando"
+                  : "A tope con la cope"
+              }
+            />
+          </BentoTilt>
+        ))}
       </div>
     </div>
   </section>

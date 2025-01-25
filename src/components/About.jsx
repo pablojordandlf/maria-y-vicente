@@ -27,14 +27,15 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen ">
-      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+    <div id="about" className="min-h-screen w-screen">
+      <div className="relative mb-8 mt-16 flex flex-col items-center gap-5">
+        {/*
         <p className="font-general text-sm uppercase md:text-[10px]">
-          BIENVENIDOS
+          
         </p>
-
+        */}
         <AnimatedTitle
-          title="Y QUE LE LLEVO"
+          title="BIENVENIDOS"
           containerClass="mt-5 !text-black text-center"
         />
 
@@ -48,7 +49,7 @@ const About = () => {
       <div className="h-dvh w-screen" id="clip">
         <div className="about-image">
           <img
-            src="photos/foto-maria2.jpg"
+            src="photos/about-1.jpeg"
             alt="Background"
             className=" left-0 top-0 size-full "
           />

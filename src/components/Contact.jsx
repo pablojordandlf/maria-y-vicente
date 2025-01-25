@@ -9,29 +9,17 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="my-20 min-h-96 w-screen  px-10">
+    <div id="contact" className="my-20 min-h-96 w-screen px-10">
       <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
-          <ImageClipBox
-            src="/photos/maria peque.jpeg"
-            clipClass="contact-clip-path-1"
-          />
-          
-        </div>
-
-        
 
         <div className="flex flex-col items-center text-center">
-
           <AnimatedTitle
-            title="esto no se paga solo"
-            className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
+            title="HOY CORRE POR NUESTRA CUENTA, Y NUESTRA CUENTA ES"
+            className="special-font !text-3xl !leading-[1.2] md:!text-5xl md:!leading-[1]"
           />
-          <p className="mb-10 font-general text-[10px] uppercase">
+          <p className="mt-2 mb-0 font-general text-[14px] uppercase">
             ES00 0000 0000 0000 0000
           </p>
-
-          
         </div>
       </div>
     </div>
