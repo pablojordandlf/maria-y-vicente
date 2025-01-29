@@ -9,6 +9,9 @@ import Button from "./Button";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  const handleButtonClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -41,6 +44,8 @@ const Hero = () => {
               title="CONFIRMA TU ASISTENCIA"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
+              onClick={() => handleButtonClick("https://mariayvicente.fillout.com/boda")}
+              url="https://mariayvicente.fillout.com/boda"
             />
           </div>
         </div>

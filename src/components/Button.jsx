@@ -1,6 +1,14 @@
 import clsx from "clsx";
 
-const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
+const Button = ({ id, title, rightIcon, leftIcon, containerClass, onClick, url }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick(url);
+    } else if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+  
   return (
     <button
       id={id}
@@ -8,6 +16,7 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
         "group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black",
         containerClass
       )}
+      onClick={handleClick}
     >
       {leftIcon}
 
