@@ -1,16 +1,9 @@
 import AnimatedTitle from "./AnimatedTitle";
-import Button from "./Button";
-
-const ImageClipBox = ({ src, clipClass }) => (
-  <div className={clipClass}>
-    <img src={src} />
-  </div>
-);
 
 const Contact = () => {
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
+      <div className="relative rounded-lg bg-blue-400 py-24 text-blue-50 sm:overflow-hidden">
 
         <div className="flex flex-col items-center text-center">
           <AnimatedTitle
