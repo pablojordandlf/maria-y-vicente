@@ -115,10 +115,10 @@ const Features = () => (
               }
               description={
                 index === 1
-                  ? "Un agua y a dormir que luego me llegáis con resaca a la boda."
+                  ? "STAY TUNED"
                   : index === 2
-                  ? "No se puede estar en misa y repicando"
-                  : "A tope con la cope"
+                  ? "Iglesia del Salvador 12:30h 6 de septiembre"
+                  : "Esguevillas de Esgueva. Hay buses de ida y vuelta"
               }
             />
           </BentoTilt>

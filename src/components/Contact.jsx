@@ -11,7 +11,7 @@ const Contact = () => {
             className="special-font !text-3xl !leading-[1.2] md:!text-5xl md:!leading-[1]"
           />
           <p className="mt-2 mb-0 font-general text-[14px] uppercase">
-            ES00 0000 0000 0000 0000
+            ES12 2100 3078 9422 0032 9341
           </p>
         </div>
       </div>

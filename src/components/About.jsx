@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-
 import AnimatedTitle from "./AnimatedTitle";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,35 +26,29 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen">
-      <div className="relative mb-8 mt-16 flex flex-col items-center gap-5">
-        {/*
-        <p className="font-general text-sm uppercase md:text-[10px]">
-          
-        </p>
-        */}
+    <div id="about" className="w-screen">
+      <div className="container mx-auto">
         <AnimatedTitle
           title="BIENVENIDOS"
-          containerClass="mt-5 !text-black text-center"
+          containerClass="!text-black text-center pt-16 pb-12 lg:pt-24 lg:pb-16"
         />
 
-        <div className="about-subtext">
-          <p className="text-gray-500">
+        <div className="w-full overflow-hidden px-4 md:px-8 lg:px-32" id="clip">
+          <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden max-w-[1800px] mx-auto">
+            <img
+              src="photos/about-1.jpeg"
+              alt="Background"
+              className="block w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-3xl mx-auto px-4 py-12 lg:py-16 xl:max-w-4xl">
+          <p className="text-gray-500 text-center text-lg md:text-xl lg:text-2xl leading-relaxed">
             ESTAMOS MUY FELICES DE QUE PUEDAS COMPARTIR ESTE DÍA CON NOSOTROS
           </p>
         </div>
       </div>
-
-      <div className="h-dvh w-screen" id="clip">
-        <div className="about-image">
-          <img
-            src="photos/about-1.jpeg"
-            alt="Background"
-            className=" left-0 top-0 size-full "
-          />
-        </div>
-      </div>
-
     </div>
   );
 };

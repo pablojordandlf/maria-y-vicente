@@ -111,7 +111,7 @@ const FloatingImage = () => {
 
             <Button
               id="realm-btn"
-              title="buscar alojamientos"
+              title="alojamientos"
               containerClass="mt-5"
             />
           </div>
