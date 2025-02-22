@@ -98,7 +98,11 @@ const Features = () => (
                   ? "STAY TUNED"
                   : index === 2
                   ? "Iglesia del Salvador 12:30h 6 de septiembre"
-                  : "Esguevillas de Esgueva. Hay buses de ida y vuelta"
+                  : (
+                    <span className="whitespace-pre-line">
+                      {"Esguevillas de Esgueva.\nHay buses de ida y vuelta"}
+                    </span>
+                  )
               }
               isDarkText={index !== 1}
               alignRight={index === 3}
