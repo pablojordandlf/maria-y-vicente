@@ -113,6 +113,7 @@ const FloatingImage = () => {
               id="realm-btn"
               title="alojamientos"
               containerClass="mt-5"
+              url="https://docs.google.com/spreadsheets/d/1fxMyEgkZdTjkiBPNKRAMseOG1BHcsnA-oGLLee8InmM/edit?usp=sharing"
             />
           </div>
         </div>

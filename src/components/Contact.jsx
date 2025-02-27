@@ -7,7 +7,7 @@ const Contact = () => {
 
         <div className="flex flex-col items-center text-center">
           <AnimatedTitle
-            title="HOY CORRE POR NUESTRA CUENTA, Y NUESTRA CUENTA ES"
+            title="El mayor regalo es vuestra acompañia, pero os dejamos nuestra cuenta por si queréis ayudarnos con nuestros comienzos"
             className="special-font !text-3xl !leading-[1.2] md:!text-5xl md:!leading-[1]"
           />
           <p className="mt-2 mb-0 font-general text-[14px] uppercase">
